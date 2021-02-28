@@ -1,0 +1,103 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.one{
+    background-color: yellow;
+    text-align: center;
+    padding: 7px;
+    text-shadow: 5px 7px 6px #333;
+    
+}
+
+.two{
+    background-color: black;
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+}
+
+.two a{
+    color: aliceblue;
+    padding: 10px;
+    text-decoration: none;
+}
+.two a:hover {
+    background-color: darkgoldenrod;
+}
+
+.three{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.three .links{
+    position: fixed;
+    top: 40%;
+}
+
+.three .links a{
+    text-decoration: none;
+    display:block;
+    padding: 2px;
+    margin: 2px;
+    background-color: #eee;
+}
+
+.three div .main img{
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 60px
+}
+
+.three div h1{
+    text-align: center;
+}
+.three div p{
+    text-align: center; 
+}
+
+.three .big_pic{
+    width: 700px;
+    height: 100%;
+    padding: 20px;
+}
+
+.three .big_pic div img{
+    width: 700px;
+    height: 500px;
+    background-size: cover;
+    
+}
+
+.three .big_pic h1{
+    align-content: center;
+}
+
+.three .big_pic p{
+    align-content: center;
+}
+
+.three .big_pic{
+    position: relative;
+}
+
+.three .big_pic div{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    padding: 20px;
+}
+
+@media screen and (max-width:700px){
+    .two{
+        flex-direction: column;
+    }
+    .three{
+        flex-direction: column;
+    }
+}
